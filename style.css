@@ -374,6 +374,10 @@ nav {
   position: relative;
   right: 0;
   left: 45%;
+  display: flex;
+  }
+  .show-links {
+    display: none;
   }
   .links a {
     color: #fff;
