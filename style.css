@@ -377,7 +377,7 @@ nav {
   display: flex;
   }
   .show-links {
-    display: none;
+    /* display: none; */
   }
   .links a {
     color: #fff;
