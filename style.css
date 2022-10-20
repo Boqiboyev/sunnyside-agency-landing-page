@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,700&display=swap');
+/*     
+font-family: 'Fraunces', serif; */
+
+:root {
+  /* Primary */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  /* graphic design text */
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  /* photography text */
+  --dark-blue: hsl(198, 62%, 26%);
+  /* footer */
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+  /* Neutral */
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background-image: url(./images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.logo {
+  width: 140px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 2.5em;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  color: white;
+  letter-spacing: 7px;
+}
+
+.icon-hamburger {
+  width: 25px;
+}
+
+.arrow-down {
+  position: absolute;
+  margin-inline: auto;
+  left: 0;
+  right: 0;
+  bottom: 160px;
+  text-align: center;
+  width: 45px;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.photos {
+  display: grid;
+  grid-template-areas: 1fr;
+  grid-template-areas:
+    "egg"
+    "brand"
+    "stand"
+    "stand-txt"
+    "graphic"
+    "photography";
+}
+
+.stand-out-image {
+  grid-area: stand;
+}
+
+.stand-out-text {
+  grid-area: stand-txt;
+}
+
+.photography {
+  grid-area: photography;
+  margin-bottom: 40px;
+}
+
+.graphic-design {
+  grid-area: graphic;
+  margin-bottom: 0;
+}
+
+.transform-brand {
+  grid-area: brand;
+}
+
+.egg-photo {
+  grid-area: egg;
+}
+
+.sub-title {
+  font-size: 33px;
+  font-family: "Fraunces", serif;
+  text-align: center;
+  margin-inline: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 270px;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.desc {
+  text-align: center;
+  margin-inline: 70px;
+  line-height: 1.4;
+  color: var(--very-dark-grayish-blue);
+  margin-bottom: 30px;
+}
+
+.learn-more {
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Fraunces", serif;
+  margin-bottom: -6px;
+  z-index: 11;
+  letter-spacing: 1.3px;
+}
+
+.learn-more {
+  cursor: pointer;
+}
+
+.line {
+  height: 6px;
+  width: 135px;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  box-shadow: 0px 0px 10px var(--yellow);
+}
+
+.graphic-design, .photography {
+  position: relative;
+}
+
+.photo-text-container {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+.graphic-title, .graphic-desc {
+  color: var(--dark-desaturated-cyan);
+  line-height: 1.5;
+  word-spacing: 1px;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.photo-title, .photo-desc {
+  color: var(--dark-blue);
+  line-height: 1.5;
+  word-spacing: 1px;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.clients-thoughts {
+  margin-bottom: 100px;
+}
+
+.client-test {
+  width: 100%;
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+}
+
+.user {
+  display: block;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 60px;
+}
+
+.user img {
+  width: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.user-thought {
+  margin-inline: 35px;
+  line-height: 1.5;
+  color: var(--very-dark-grayish-blue);
+  margin-bottom: 25px;
+}
+
+.user-name {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 10px;
+}
+
+.profession {
+  color: var(--grayish-blue);
+  font-weight: 300;
+}
+
+.footer-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-image-container img {
+  width: 100%;
+}
+
+.additional-info {
+  flex-direction: column;
+  align-items: center;
+  background-color: #9DF7E5;
+}
+
+.additional-links {
+  gap: 3.6em;
+  font-size: 17px;
+  margin-bottom: 70px;
+}
+
+.additional-links a {
+  color: var(--dark-moderate-cyan);
+  
+}
+
+.footer-logo {
+  margin-top: 60px;
+  font-size: 33px;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  text-transform: lowercase;
+  color: var(--dark-moderate-cyan);
+  letter-spacing: 1px;
+}
+
+.social-media {
+  gap: 1.7em;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.toggle-btn {
+  cursor: pointer;
+}
+
+.toggle-btn:active {
+  transform: scale(1.05);
+}
+
+.links {
+  padding-block: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  right: 50%;
+  top: -15px;
+  width: 84vw;
+  transform: translate(-50%, 50%);
+  background-color: white;
+}
+
+.links a {
+  color: var(--dark-grayish-blue);
+}
+
+.contact-btn {
+  padding: 13px 23px;
+  border: none;
+  background-color: var(--yellow);
+  border-radius: 30px;
+  font-size: 15px;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  color: var(--very-dark-desaturated-blue);
+  cursor: pointer;
+}
+
+.edge {
+ position: absolute;
+ right: 0;
+ top: -25px;
+ width: 0;
+ height: 0;
+ border-left: 25px solid transparent;
+ border-right: 0px solid transparent;
+ border-bottom: 25px solid rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 700px){
+  .title {
+    margin-top: 10px;
+    font-size: 45px;
+  }
+  nav {
+    padding-top: 10px;
+  }
+  .header {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .toggle-btn {
+    display: none;
+  }
+  .links{
+  flex-direction: row;
+  justify-content: end;
+  background-color: transparent;
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  right: 0;
+  left: 45%;
+  }
+  .links a {
+    color: #fff;
+  }
+  .arrow-down {
+  position: absolute;
+  margin-inline: auto;
+  left: 0;
+  top: 240px;
+  right: 0;
+  bottom: 160px;
+  text-align: center;
+  width: 35px;
+  display: block;
+}
+  .contact-btn {
+    background-color: #fff;
+    color: black;
+  }
+  .edge {
+    display: none;
+  }
+
+  .photos {
+  display: grid;
+  grid-template-areas: 1fr 1fr;
+  grid-template-areas:
+    "brand egg"
+    "stand stand-txt"
+    "graphic photography";
+}
+
+.graphic-design img {
+  display: none;
+}
+.graphic-design {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+}
+
+.photography img {
+  display: none;
+}
+
+.sub-title {
+  width: 350px;
+  font-size: 40px;
+  margin-bottom: 30px;
+  /* margin-right: 220px; */
+  margin-left: 70px;
+}
+
+
+.learn-more {
+  margin-top: 30px;
+}
+
+.learn-more, .line {
+  margin-left: 70px;
+}
+
+.sub-title, .desc {
+  text-align: start;
+}
+
+.desc {
+  font-size: 18px;
+  width: 420px;
+}
+.photography {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-repeat: no-repeat;
+  height: 620px;
+}
+
+.box {
+  margin-bottom: 0;
+  align-items: start;
+  justify-content: center;
+  /* height: 400px; */
+  /* padding-left: 20px; */
+}
+
+.sub-title, .desc, .learn-more, .line {
+  margin-left: 150px;
+}
+
+.client-test {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  margin-block: 100px;
+  font-size: 30px;
+}
+
+.users {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 150px;
+}
+
+.user {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-thought {
+  width: 26vw;
+}
+
+.footer-image-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+}
+
+
+
+.show-links {
+  display: none;
+}

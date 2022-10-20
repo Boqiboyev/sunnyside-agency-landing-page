@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon shortcut" href="#">
+  <title>Login</title>
+</head>
+<body>
+  <header>
+    <h1 class="logo">sunnyside</h1>
+    <h2>Good to see you again</h2>
+  </header>
+  <main>
+    <div class="app">
+      <form action="/">
+        <div class="email">
+          <label for="email">Your email</label>
+          <input type="text" id="email" autocomplete="off" placeholder="e.g elon@tesla.com">
+          <img class="email-icon" src="./login images/icons8-person-30.png" alt="">
+        </div>
+        <p class="invalid">Please enter valid email address</p>
+        <div class="password">
+          <label for="password">Your password</label>
+          <input type="password" id="password" placeholder="e.g iLoveSunnystudio123">
+          <img class="password-icon" src="./login images/icons8-password-30.png" alt="">
+        </div>
+        <button type="submit">Sign in</button>
+      </form>
+      <div class="add-info">
+        <p class="no-account"><a href="#">Don't have an account?</a></p>
+        <p class="forgot-password"><a href="#">Forgot password?</a></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Go to <a href="../index.html">main</a> page.</p>
+    </footer>
+  </main>
+  <script src="./login.js"></script>
+</body>
+</html>
